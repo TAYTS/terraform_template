@@ -1,0 +1,6 @@
+*.pem
+*.pub
+
+.terraform
+.terraform.*
+terraform.*
