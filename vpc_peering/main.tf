@@ -14,7 +14,7 @@ provider "aws" {
 
 #######    VPC 1    #######
 module "vpc1" {
-  source = "../module/vpc"
+  source = "./module/vpc"
 
   vpc_tag = "vpc1"
 
@@ -35,7 +35,7 @@ module "vpc1" {
 
 #######    VPC 2    #######
 module "vpc2" {
-  source = "../module/vpc"
+  source = "./module/vpc"
 
   vpc_tag = "vpc2"
 
@@ -56,7 +56,7 @@ module "vpc2" {
 
 #######    VPC1 Security Group    #######
 module "vpc1_sg" {
-  source = "../module/security_group"
+  source = "./module/security_group"
 
   sg_tag = "vpc1_sg"
 
@@ -65,7 +65,7 @@ module "vpc1_sg" {
 
 #######    VPC2 Security Group    #######
 module "vpc2_sg" {
-  source = "../module/security_group"
+  source = "./module/security_group"
 
   sg_tag = "vpc2_sg"
 
